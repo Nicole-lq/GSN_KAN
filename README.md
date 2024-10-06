@@ -17,11 +17,13 @@ Kolmogorov-Arnold Networks (KANs) introduce a novel neural network architecture 
 
 This project explores KANs for **photometric redshift extraction**, a critical challenge in astronomy, where the goal is to infer the redshift of astronomical objects using only broad-band photometry. The complex and non-linear mapping between observed photometric data and redshift may benefit from the flexibility and interpretability that KANs offer.
 
+
 ## Problem Overview: Photometric Redshift Extraction
 
 In astronomy, **photometric redshift extraction** involves predicting the redshift of objects using only broad-band photometric data. The mapping from photometric data to redshift is highly complex and non-linear. Traditional approaches such as Multi-Layer Perceptrons (MLPs) can struggle with this complexity, so we propose KANs as a potential improvement.
 
 The key question: **Are KANs more efficient, interpretable, and accurate than traditional MLPs?**
+
 
 ## Main Goal
 
@@ -33,6 +35,7 @@ The main objective of this project is to evaluate the practicality and utility o
 
 Performance is measured using two key metrics: **R² (coefficient of determination)** and **Mean Squared Error (MSE)**.
 
+
 ## Data Source
 
 The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR18)**.
@@ -41,6 +44,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 
 - A high frequency of data is observed for **small redshifts (0 ≤ z ≤ 0.2)**, indicating an unbalanced sample.
 - The total observation count from **SDSS-18**: 19,909.
+
 
 ## Model Frameworks
 
@@ -62,7 +66,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
   - Best MSE: 0.0024
 
 <p align="left">
-  <img src="images/MLP_r.png" width="800">
+  <img src="images/MLP_r.png" width="1000">
 </p>
   
 
@@ -84,7 +88,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
     - MSE Best: 0.0130
 
 <p align="left">
-  <img src="images/SR_r.png" width="800">
+  <img src="images/SR_r.png" width="1000">
 </p>
   
 ### 3. **KAN Model**
@@ -103,8 +107,9 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
   - Best MSE: 0.0025
 
 <p align="left">
-  <img src="images/KAN_r.png" width="800">
+  <img src="images/KAN_r.png" width="1000">
 </p>
+
 
 ## Summary Statistics
 
@@ -115,6 +120,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 | KAN    | 0.333| 0.0025    |
 
 KAN, SR, and MLP models achieve **comparable performance** on average. All models reach test MSE values smaller than 10⁻².
+
 
 ## Future Directions
 
