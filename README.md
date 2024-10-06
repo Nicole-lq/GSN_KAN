@@ -1,4 +1,12 @@
+<div align="center">
+
 # Kicking the KAN with Photometric Redshifts (Photo-zs)
+
+<p>
+  <img src="images/KAN.png" width="300">
+</p>
+
+</div>
 
 ## Motivation
 
@@ -48,10 +56,15 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
   - Loss function: Mean Squared Error (MSE)
   - Optimizer: Adam (learning rate: 0.001)
   - Hardware: GPU (if available)
-  
+
 - **Results**:
   - R²: 0.439
   - Best MSE: 0.0024
+
+<p align="left">
+  <img src="images/MLP_r.png" width="600">
+</p>
+  
 
 ### 2. **Symbolic Regression (SR)**
 
@@ -69,6 +82,10 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
   - Uniform Data:
     - R²: 0.576
     - MSE Best: 0.0130
+
+<p align="left">
+  <img src="images/SR_r.png" width="600">
+</p>
   
 ### 3. **KAN Model**
 
@@ -84,6 +101,10 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 - **Results**:
   - R²: 0.333
   - Best MSE: 0.0025
+
+<p align="left">
+  <img src="images/KAN_r.png" width="600">
+</p>
 
 ## Summary Statistics
 
