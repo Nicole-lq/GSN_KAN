@@ -62,7 +62,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
   - Best MSE: 0.0024
 
 <p align="left">
-  <img src="images/MLP_r.png" width="600">
+  <img src="images/MLP_r.png" width="800">
 </p>
   
 
@@ -84,7 +84,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
     - MSE Best: 0.0130
 
 <p align="left">
-  <img src="images/SR_r.png" width="600">
+  <img src="images/SR_r.png" width="800">
 </p>
   
 ### 3. **KAN Model**
@@ -103,7 +103,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
   - Best MSE: 0.0025
 
 <p align="left">
-  <img src="images/KAN_r.png" width="600">
+  <img src="images/KAN_r.png" width="800">
 </p>
 
 ## Summary Statistics
