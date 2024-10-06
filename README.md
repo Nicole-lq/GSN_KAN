@@ -1,6 +1,6 @@
 # Kicking the KAN with Photometric Redshifts (Photo-zs)
 
-<p align="center">
+<p align="right">
   <img src="images/KAN.png" width="400">
 </p>
 
@@ -53,11 +53,9 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
   - Optimizer: Adam (learning rate: 0.001)
   - Hardware: GPU (if available)
 
-<p align="center">
-  <img src="images/MLP_r.png" width="500">
+<p align="right">
+  <img src="images/MLP_r.png" width="600">
 </p>
-
-![](images/MLP_r.png)
   
 - **Results**:
   - R²: 0.439
