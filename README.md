@@ -1,5 +1,7 @@
 # Kicking the KAN with Photometric Redshifts (Photo-zs)
 
+![](images/KAN.png)
+
 ## Motivation
 
 Kolmogorov-Arnold Networks (KANs) introduce a novel neural network architecture by replacing fixed activation functions on nodes with **learnable activation functions** on the edges between nodes. This approach offers:
@@ -48,6 +50,8 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
   - Loss function: Mean Squared Error (MSE)
   - Optimizer: Adam (learning rate: 0.001)
   - Hardware: GPU (if available)
+
+![](images/MLP_r.png)
   
 - **Results**:
   - R²: 0.439
