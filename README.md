@@ -50,7 +50,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 
 ### 1. **MLP Model**
 
-- **Input**: 4 features (u, g, r, i)
+- **Input**: 4 features 
 - **Hidden Layers**: 
   - 1st layer: 64 neurons
   - 2nd layer: 32 neurons
