@@ -1,6 +1,6 @@
 <div align="center">
 
-# Kicking the KAN with Photometric Redshifts (Photo-zs)
+# Kicking the KAN with Photometric Redshifts
 
 <p>
   <img src="images/KAN.png" width="300">
