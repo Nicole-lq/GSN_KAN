@@ -50,7 +50,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 
 ### 1. **MLP Model**
 
-- **Input**: 4 features 
+- **Input**: 5 features 
 - **Hidden Layers**: 
   - 1st layer: 64 neurons
   - 2nd layer: 32 neurons
@@ -62,7 +62,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
   - Hardware: GPU (if available)
 
 - **Results**:
-  - R²: 0.439
+  - R²: 0.44
   - Best MSE: 0.0024
 
 <p align="left">
@@ -81,10 +81,10 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 
 - **Results**:
   - Non-Uniform Data:
-    - R²: 0.410
+    - R²: 0.41
     - MSE Best: 0.0022
   - Uniform Data:
-    - R²: 0.576
+    - R²: 0.58
     - MSE Best: 0.0130
 
 <p align="left">
@@ -94,7 +94,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 ### 3. **KAN Model**
 
 - **Structure**:
-  - Width: [4, 2, 1] (input, hidden, output layers)
+  - Width: [5, 2, 1] (input, hidden, output layers)
   - Grid size: 3, k-value: 3
   - Trainable parameters: 120
 - **Training**:
@@ -103,8 +103,8 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
   - Hardware: GPU (if available)
 
 - **Results**:
-  - R²: 0.333
-  - Best MSE: 0.0025
+  - R²: 0.42
+  - Best MSE: 0.0022
 
 <p align="left">
   <img src="images/KAN_r.png" width="1000">
@@ -113,11 +113,11 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 
 ## Summary Statistics
 
-| Model  | R²   | Best MSE  |
-|--------|------|-----------|
-| MLP    | 0.439| 0.0024    |
-| SR     | 0.410| 0.0022    |
-| KAN    | 0.333| 0.0025    |
+| Model  | R²   | Best MSE |
+|--------|------|----------|
+| MLP    | 0.44 | 0.0024   |
+| SR     | 0.41 | 0.0022   |
+| KAN    | 0.42 | 0.0022   |
 
 KAN, SR, and MLP models achieve **comparable performance** on average. All models reach test MSE values smaller than 10⁻².
 
