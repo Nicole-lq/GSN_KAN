@@ -10,23 +10,23 @@
 
 # Index
 
-1. **[Kicking the KAN with Photometric Redshifts (Photo-zs)](#kicking-the-kan-with-photometric-redshifts-photo-zs)**
-   - [Motivation](#motivation)
-   - [Problem overview: Photometric redshift rxtraction](#problem-overview-photometric-redshift-extraction)
-   - [Main goal](#main-goal)
-   - [Data source](#data-source)
-   - [Model frameworks](#model-frameworks)
-     - [MLP Model](#mlp-model)
-     - [Symbolic Regression (SR)](#symbolic-regression-sr)
-     - [KAN Model](#kan-model)
-   - [Summary statistics](#summary-statistics)
-   - [Conclusions](#conclusions)
-   - [Future directions](#future-directions)
+**[Kicking the KAN with Photometric Redshifts (Photo-zs)](#kicking-the-kan-with-photometric-redshifts-photo-zs)**
+ - [Motivation](#motivation)
+ - [Problem overview: Photometric redshift rxtraction](#problem-overview-photometric-redshift-extraction)
+ - [Main goal](#main-goal)
+ - [Data source](#data-source)
+ - [Model frameworks](#model-frameworks)
+   - [MLP Model](#mlp-model)
+   - [Symbolic Regression (SR)](#symbolic-regression-sr)
+   - [KAN Model](#kan-model)
+ - [Summary statistics](#summary-statistics)
+ - [Conclusions](#conclusions)
+ - [Future directions](#future-directions)
 
-2. **[Latest Results](#latest-results)**
-   - [Experiment overview](#experiment-overview)
-   - [Performance Metrics](#performance-metrics)
-   - [Discussion](#discussion)
+**[Latest Results](#latest-results)**
+ - [Experiment overview](#experiment-overview)
+ - [Performance Metrics](#performance-metrics)
+ - [Discussion](#discussion)
 
 
 
@@ -183,7 +183,7 @@ This time, the model achieved the following performance metrics:
   - R² : 0.58
   - MSE : 0.0108
     
-- Test data:
+- Validation data:
   - R² : 0.55
   - MSE : 0.0110
 
