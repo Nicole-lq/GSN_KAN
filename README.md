@@ -8,7 +8,7 @@
 
 </div>
 
-## Motivation
+# Motivation
 
 Kolmogorov-Arnold Networks (KANs) introduce a novel neural network architecture by replacing fixed activation functions on nodes with **learnable activation functions** on the edges between nodes. This approach offers:
 
@@ -18,14 +18,14 @@ Kolmogorov-Arnold Networks (KANs) introduce a novel neural network architecture 
 This project explores KANs for **photometric redshift extraction**, a critical challenge in astronomy, where the goal is to infer the redshift of astronomical objects using only broad-band photometry. The complex and non-linear mapping between observed photometric data and redshift may benefit from the flexibility and interpretability that KANs offer.
 
 
-## Problem overview: Photometric redshift extraction
+# Problem overview: Photometric redshift extraction
 
 In astronomy, **photometric redshift extraction** involves predicting the redshift of objects using only broad-band photometric data. The mapping from photometric data to redshift is highly complex and non-linear. Traditional approaches such as Multi-Layer Perceptrons (MLPs) can struggle with this complexity, so we propose KANs as a potential improvement.
 
 The key question: **Are KANs more efficient, interpretable, and accurate than traditional MLPs or Simbolic Regression?**
 
 
-## Main goal
+# Main goal
 
 The main objective of this project is to evaluate the practicality and utility of KANs for **photometric redshift prediction** and compare their performance against:
 
@@ -35,19 +35,19 @@ The main objective of this project is to evaluate the practicality and utility o
 
 Performance is measured using two key metrics: **R² (coefficient of determination)** and **Mean Squared Error (MSE)**.
 
-## Data source
+# Data source
 
 The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR18)**.
 
-### Key data insights:
+## Key data insights:
 
 - A total of 19,870 observations. 
 - Each variable distribution can be approximated to be gaussian (~normal).
 - A high frequency of data is observed for **small redshifts (0 ≤ z ≤ 0.2)**.
 
-## Model frameworks
+# Model frameworks
 
-### 1. **MLP Model**
+## 1. **MLP Model**
 
 - **Structure**:
 - Input: 5 features 
@@ -71,7 +71,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 </p>
   
 
-### 2. **Symbolic Regression (SR)**
+## 2. **Symbolic Regression (SR)**
 
 - **Tool**: PySR (symbolic regression for Python/Julia)
   
@@ -91,7 +91,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
   <img src="images/SR_r.png" width="1000">
 </p>
   
-### 3. **KAN Model**
+## 3. **KAN Model**
 
 - **Structure**:
   - Width: [5, 2, 1] (input, hidden, output layers)
@@ -112,7 +112,8 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 </p>
 
 
-## Summary statistics
+
+# Summary statistics
 
 | Model  | R²   | Best MSE |
 |--------|------|----------|
@@ -120,11 +121,13 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 | SR     | 0.41 | 0.0022   |
 | KAN    | 0.42 | 0.0022   |
 
-## Conclusions
+
+# Conclusions
 
 In addressing the central question of whether Kolmogorov-Arnold Networks (KANs) are more efficient, interpretable, and accurate than traditional Multi-Layer Perceptrons (MLPs) for photometric redshift extraction, our results indicate that while the KAN model demonstrates a reasonable predictive capability, there is room for improvement. **The KAN, SR, and MLP models demonstrate similar performance. All models achieve validation MSE values below 10⁻², with R² scores around 0.4.**
 
-## Future directions
+
+# Future directions
 
 This work opens up multiple avenues for future exploration:
 
