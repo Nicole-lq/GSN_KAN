@@ -70,7 +70,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 
 # Model frameworks
 
-## 1. **MLP Model**
+## **MLP Model**
 
 - **Structure**:
 - Input: 5 features 
@@ -94,7 +94,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 </p>
   
 
-## 2. **Symbolic Regression (SR)**
+## **Symbolic Regression (SR)**
 
 - **Tool**: PySR (symbolic regression for Python/Julia)
   
@@ -114,7 +114,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
   <img src="images/SR_r.png" width="900">
 </p>
   
-## 3. **KAN Model**
+## **KAN Model**
 
 - **Structure**:
   - Width: [5, 2, 1] (input, hidden, output layers)
