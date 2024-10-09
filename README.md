@@ -135,9 +135,12 @@ This work opens up multiple avenues for future exploration:
 - Explore **multi-KAN models** to improve generalization.
 
 
+
 ----------------------------------------------------------------------------------------
 
-## Latest Results
+
+
+# Latest results
 
 In the latest experiment, a total of 19,870 entries were used, with five input features: **['U-G', 'G-R', 'R-I', 'I-Z', 'U-Z']**, and one target variable: **redshift**. After visualizing the distribution of the redshift values using a boxplot and histogram, outliers were identified and removed based on upper and lower bounds. The remaining data was split into training, validation, and test sets, resulting in the following data sizes:
 
