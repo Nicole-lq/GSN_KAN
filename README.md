@@ -8,6 +8,29 @@
 
 </div>
 
+# Index
+
+1. **[Kicking the KAN with Photometric Redshifts (Photo-zs)](#kicking-the-kan-with-photometric-redshifts-photo-zs)**
+   - [Motivation](#motivation)
+   - [Problem overview: Photometric redshift rxtraction](#problem-overview-photometric-redshift-extraction)
+   - [Main goal](#main-goal)
+   - [Data source](#data-source)
+   - [Model frameworks](#model-frameworks)
+     - [MLP Model](#mlp-model)
+     - [Symbolic Regression (SR)](#symbolic-regression-sr)
+     - [KAN Model](#kan-model)
+   - [Summary statistics](#summary-statistics)
+   - [Conclusions](#conclusions)
+   - [Future directions](#future-directions)
+
+2. **[Latest Results](#latest-results)**
+   - [Experiment overview](#experiment-overview)
+   - [Performance Metrics](#performance-metrics)
+   - [Discussion](#discussion)
+
+
+
+
 # Motivation
 
 Kolmogorov-Arnold Networks (KANs) introduce a novel neural network architecture by replacing fixed activation functions on nodes with **learnable activation functions** on the edges between nodes. This approach offers:
@@ -64,7 +87,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 
 - **Results**:
   - R²: 0.44
-  - Best MSE: 0.0024
+  - MSE: 0.0024
 
 <p align="left">
   <img src="images/MLP_r.png" width="1000">
@@ -82,10 +105,10 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 - **Results**:
   - Non-Uniform Data:
     - R²: 0.41
-    - MSE Best: 0.0022
+    - MSE: 0.0022
   - Uniform Data:
     - R²: 0.58
-    - MSE Best: 0.0130
+    - MSE: 0.0130
 
 <p align="center">
   <img src="images/SR_r.png" width="900">
@@ -105,7 +128,7 @@ The data used for this project comes from **Sloan Digital Sky Server V (SDSS DR1
 
 - **Results**:
   - R²: 0.42
-  - Best MSE: 0.0022
+  - MSE: 0.0022
 
 <p align="center">
   <img src="images/KAN_r.png" width="900">
@@ -138,11 +161,13 @@ This work opens up multiple avenues for future exploration:
 - Explore **multi-KAN models** to improve generalization.
 
 
-//
 ----------------------------------------------------------------------------------------
 
-
 # Latest results
+
+----------------------------------------------------------------------------------------
+
+## Experiment overview
 
 In the latest experiment, a total of 19,870 entries were used, with five input features: **['U-G', 'G-R', 'R-I', 'I-Z', 'U-Z']**, and one target variable: **redshift**. After visualizing the distribution of the redshift values using a boxplot and histogram, outliers were identified and removed based on upper and lower bounds. The remaining data was split into training, validation, and test sets, resulting in the following data sizes:
 
@@ -153,20 +178,25 @@ In the latest experiment, a total of 19,870 entries were used, with five input f
 The previously implemented KAN model, with a configuration of **[5, 2, 1], k=3, and dim=3**, was trained to predict the redshift values.
 This time, the model achieved the following performance metrics:
 
-- **Results for test**:
+## Performance metrics
+
+- Test data:
   - R² : 0.58
-  - Best MSE : 0.0108
+  - MSE : 0.0108
     
-- **Results for validation**:
+- Test data:
   - R² : 0.55
-  - Best MSE : 0.0110
+  - MSE : 0.0110
 
 <p align="left">
   <img src="images/update.png" width="900">
 </p>
 
 
+# Discussion
 
-Despite the fact that the KAN model architecture remained unchanged throughout this experiment, the results indicate that significant improvements can still be achieved through better data management practices. The observed performance metrics suggest that further enhancements to the dataset, could lead to more accurate predictions of redshift values. **Future work should focus on these preprocessing techniques to optimize the dataset and ultimately improve model efficacy before anything else.**
+Although the architecture of the KAN model remained unchanged throughout this experiment, the results indicate that substantial improvements could still be achieved through enhanced data management practices. The observed performance metrics suggest that further refinements to the dataset could lead to more accurate predictions of redshift values. **Future work should prioritize these preprocessing techniques to optimize the dataset and ultimately enhance model efficacy.**
+
+
 
 
