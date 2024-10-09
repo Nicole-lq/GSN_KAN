@@ -165,7 +165,6 @@ This work opens up multiple avenues for future exploration:
 
 # Latest results
 
-----------------------------------------------------------------------------------------
 
 ## Experiment overview
 
