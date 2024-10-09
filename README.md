@@ -8,29 +8,6 @@
 
 </div>
 
-# Index
-
-**[Kicking the KAN with Photometric Redshifts (Photo-zs)](#kicking-the-kan-with-photometric-redshifts-photo-zs)**
- - [Motivation](#motivation)
- - [Problem overview: Photometric redshift rxtraction](#problem-overview-photometric-redshift-extraction)
- - [Main goal](#main-goal)
- - [Data source](#data-source)
- - [Model frameworks](#model-frameworks)
-   - [MLP Model](#mlp-model)
-   - [Symbolic Regression (SR)](#symbolic-regression-sr)
-   - [KAN Model](#kan-model)
- - [Summary statistics](#summary-statistics)
- - [Conclusions](#conclusions)
- - [Future directions](#future-directions)
-
-**[Latest Results](#latest-results)**
- - [Experiment overview](#experiment-overview)
- - [Performance Metrics](#performance-metrics)
- - [Discussion](#discussion)
-
-
-
-
 # Motivation
 
 Kolmogorov-Arnold Networks (KANs) introduce a novel neural network architecture by replacing fixed activation functions on nodes with **learnable activation functions** on the edges between nodes. This approach offers:
@@ -192,10 +169,12 @@ This time, the model achieved the following performance metrics:
 </p>
 
 
+# Comparison with Previous Results
+
+The increase from **0.42** to **0.55** indicates an improvement in the model's explanatory power. This suggests that the model is now better at accounting for variability in the validation dataset. However, the increase in MSE from **0.0022** to **0.0110** suggests that the average prediction error has worsened. This is a concerning outcome, as it indicates that the model is providing less precise predictions despite its better fit to the data.
+
 # Discussion
 
 Although the architecture of the KAN model remained unchanged throughout this experiment, the results indicate that substantial improvements could still be achieved through enhanced data management practices. The observed performance metrics suggest that further refinements to the dataset could lead to more accurate predictions of redshift values. **Future work should prioritize these preprocessing techniques to optimize the dataset and ultimately enhance model efficacy.**
-
-
 
 
