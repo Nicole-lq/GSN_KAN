@@ -136,6 +136,6 @@ This work opens up multiple avenues for future exploration:
 - Optimize hyperparameters.
 - Investigate deeper and wider KAN architectures.
 - Explore **multi-KAN models** to improve generalization.
+  
 
-
-
+**Advisor:** Matthew Graham
